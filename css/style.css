@@ -59,14 +59,121 @@ nav {
 }
 
 
-
-
-
-
 /* On regle le  */
 main {
-    border: 2px solid green;
     flex-grow: 6;
+}
+
+/* On regle le titre pricipale de la page */
+h1 {
+    color: blue;
+    margin: 10px;
+    text-align: center;
+}
+
+/* On regle les titre h2 */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.row-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+/* On regle les sections */
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+
+}
+
+/* On regle les titre h3 */
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* On regle les paragraphe */
+p {
+    text-align: justify;
+}
+
+/* On regle la card memebre */
+.membre {
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.58);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.58);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* On regle l'image avatar membre */
+.avatar {
+    width: 70px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* On regle les items de la div horizontalement */
+.horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+/* On regle les items de la div verticalement */
+.vertical {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* On regle les label des input */
+label {
+    font-weight: bold;
+}
+
+/* On regle les inputs */
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* On regle le textarea */
+#message {
+    width: 80%;
+    /* On met la hauteur minimun a 150px */
+    min-height: 150px;
+    /* On determine le redimentionnelent verticalment par l'utilisateur */
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+/* On regle le btn submit */
+input[type=submit] {
+
+    background-color: #205685;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* On regle le btn submit au survole de la souri */
+input[type=submit]:hover {
+
+    background-color: rgb(146, 62, 62)
 }
 
 
@@ -77,6 +184,9 @@ main {
 
 
 
+
+
+/* On regle le footer */
 footer {
     border: 2px solid orange;
     flex-grow: 2;
