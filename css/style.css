@@ -3,25 +3,41 @@
     padding: 0;
 }
 
-header {}
+body {
 
-main {
+    height: 100vh;
 
-
-
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
+header {
 
-body{
+    border: 2px solid red;
+    flex-grow: 1;
 
     
 
-border:  2px solid red;
+}
 
+main {
+
+    border: 2px solid green;
+
+    flex-grow: 4;
+    
 
 }
 
 
 
 
-footer {}
+
+
+footer {
+    border: 2px solid orange;
+    flex-grow: 2;
+    
+
+}
