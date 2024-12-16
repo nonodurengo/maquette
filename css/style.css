@@ -1,34 +1,76 @@
+/* Permet de supprimer toutes les marges et padding de la page */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* On regle le body de la page */
 body {
-
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
+/* On regle le header' */
 header {
+    background-color: #205685;
+    flex-grow: 0.5;
+}
 
-    border: 2px solid red;
+/* On regle le top-bar */
+#top-bar {
+    background-color: rgb(5, 5, 206);
+    padding: 5px;
+    text-align: center;
+    /* On créer une ombre */
+    -webkit-box-shadow: 5px 5px 15px 4px #000000;
+    box-shadow: 5px 5px 15px 4px #000000;
+}
+
+#logo-top-bar {
+    width: 100px;
+}
+
+nav {
+    padding: 20px;
+}
+
+/* On regle le menu */
+.menu {
+    /* On enleve le puces */
+    list-style: none;
+    display: flex;
     flex-grow: 1;
-
-    
-
+    justify-content: space-around;
+    flex-wrap: row nowrap;
 }
 
+.link {
+    font-size: 20px;
+    color: white;
+    font-style: none;
+    /* On elneve le soulignement */
+    text-decoration: none;
+}
+
+.link:hover {
+    color: yellow;
+}
+
+
+
+
+
+
+/* On regle le  */
 main {
-
     border: 2px solid green;
-
-    flex-grow: 4;
-    
-
+    flex-grow: 6;
 }
+
+
+
 
 
 
@@ -38,6 +80,4 @@ main {
 footer {
     border: 2px solid orange;
     flex-grow: 2;
-    
-
 }
