@@ -50,14 +50,13 @@ nav {
     font-size: 20px;
     color: white;
     font-style: none;
-    /* On elneve le soulignement */
+    /* On enleve le soulignement */
     text-decoration: none;
 }
 
 .link:hover {
     color: yellow;
 }
-
 
 /* On regle le  */
 main {
@@ -79,9 +78,11 @@ h2 {
     text-decoration: underline;
 }
 
+/* On regle les éléments en ligne */
 .row-wrap {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-flow: row wrap;
     gap: 40px;
 }
@@ -90,7 +91,6 @@ h2 {
 section {
     margin-bottom: 50px;
     padding: 20px;
-
 }
 
 /* On regle les titre h3 */
@@ -109,11 +109,17 @@ p {
     width: 200px;
     padding: 10px;
     border-radius: 15px;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.58);
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.60);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.60);
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+/* Au survol de la souri, on diminu l'ombre sur les card */
+.membre:hover{
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
 }
 
 /* On regle l'image avatar membre */
@@ -163,7 +169,6 @@ input {
 
 /* On regle le btn submit */
 input[type=submit] {
-
     background-color: #205685;
     color: white;
     border-radius: 20px;
@@ -172,22 +177,29 @@ input[type=submit] {
 
 /* On regle le btn submit au survole de la souri */
 input[type=submit]:hover {
-
     background-color: rgb(146, 62, 62)
 }
 
-
-
-
-
-
-
-
-
-
-
 /* On regle le footer */
 footer {
-    border: 2px solid orange;
+    background-color: #089a91;
+    padding: 30px;
     flex-grow: 2;
+}
+
+/* On regle me nu du footer */
+.footer-ul{
+    list-style: none;
+}
+
+/* O regle les lien du menu footer */
+.footer-link {
+    font-size: 20px;
+    font-style: none;
+    /* On enleve le soulignement */
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: aliceblue;
 }
