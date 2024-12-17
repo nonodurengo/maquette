@@ -78,6 +78,7 @@ nav {
 
 /* On regle le  */
 main {
+    margin: 0 15%;
     flex-grow: 6;
 }
 
@@ -127,8 +128,8 @@ p {
     width: 200px;
     padding: 10px;
     border-radius: 15px;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.60);
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.60);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.20);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.20);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -136,8 +137,8 @@ p {
 
 /* Au survol de la souri, on diminu l'ombre sur les card */
 .membre:hover {
-    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.20);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 /* On regle l'image avatar membre */
@@ -177,7 +178,7 @@ input {
 
 /* On regle le textarea */
 #message {
-    width: 80%;
+    width: 92%;
     /* On met la hauteur minimun a 150px */
     min-height: 150px;
     /* On determine le redimentionnelent verticalment par l'utilisateur */
@@ -229,8 +230,8 @@ footer {
     min-width: 500px;
     padding: 20px;
     background-color: white;
-    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.20);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.20);
 
     top: 300px;
     left: 400px;
