@@ -54,9 +54,27 @@ nav {
     text-decoration: none;
 }
 
+/* Au survole de la souri, on modifi la couleur du lien */
 .link:hover {
     color: yellow;
 }
+
+/* On créer un submenu e on le cache au chargement de la page */
+.sub-menu {
+    /* On enleve le puces */
+    list-style: none;
+    display: none;
+}
+
+/*Au survole de la souris sur le li, on affiche son sub-menu */
+.items:hover .sub-menu {
+    background-color: rgb(190, 187, 187);
+    padding: 20px;
+    margin-left: 20px;
+    position: absolute;
+    border-radius: 5px;
+    display: block;
+}()
 
 /* On regle le  */
 main {
@@ -117,7 +135,7 @@ p {
 }
 
 /* Au survol de la souri, on diminu l'ombre sur les card */
-.membre:hover{
+.membre:hover {
     -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
 }
@@ -188,7 +206,7 @@ footer {
 }
 
 /* On regle me nu du footer */
-.footer-ul{
+.footer-ul {
     list-style: none;
 }
 
