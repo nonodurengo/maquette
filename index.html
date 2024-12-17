@@ -65,6 +65,18 @@
     </header>
 
     <main>
+
+        <section id="modal">
+            <h3>ERREUR DE FORMULAIRE</h3>
+            <div id="mess-error"></div>
+            <div class="modal-align-btn">
+                <button type="button" id="fermer">Fermer</button>
+            </div>
+        </section>
+
+
+
+
         <h1>Pemière page</h1>
         <section id="presentation">
             <h2>Présentation</h2>
@@ -130,29 +142,29 @@
         </section>
         <section id="contact">
             <h2>Nous contacter</h2>
-            <form action="index.html" method="post">
+            <form id="formulaire" action="index.html" method="post">
                 <div class="row-wrap">
                     <div class="vertical">
                         <label for="nom">Nom:</label>
-                        <input type="text" id="nom" name="nom" placeholder="Saisir votre nom">
+                        <input type="text" id="nom" name="nom" placeholder="Saisir votre nom *">
                     </div>
                     <div class="vertical">
                         <label for="prenom">Prénom</label>
-                        <input type="text" id="prenom" name="prenom" placeholder="Saisir votre prénom">
+                        <input type="text" id="prenom" name="prenom" placeholder="Saisir votre prénom *">
                     </div>
                     <div class="vertical">
                         <label for="mail">Adresse mail:</label>
-                        <input type="email" id="mail" name="mail" placeholder="Saisir votre adresse mail">
+                        <input type="email" id="mail" name="mail" placeholder="Saisir votre adresse mail *">
                     </div>
 
                     <div class="vertical">
                         <label for="sujet">Sujet</label>
-                        <input type="text" id="sujet" name="sujet" placeholder="Saisir votre sujet">
+                        <input type="text" id="sujet" name="sujet" placeholder="Saisir votre sujet *">
                     </div>
                 </div>
                 <div class="vertical">
                     <label for="message">Votre message</label>
-                    <textarea name="message" id="message" placeholder="Votre message"></textarea>
+                    <textarea name="message" id="message" placeholder="Votre message *"></textarea>
                 </div>
                 <div class="vertical">
                     <input type="submit" id="btn_contact" name="btn_contact" value="Envoyer">
@@ -183,6 +195,7 @@
             <img id="logo-top-bar" src="img/logo.png" alt="Logo">
         </div>
     </footer>
+    <script src="js/page.js"></script>
 </body>
 
 </html>

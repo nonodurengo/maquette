@@ -221,3 +221,45 @@ footer {
 .footer-link:hover {
     color: aliceblue;
 }
+
+#modal {
+    display: none;
+    position: fixed;
+    border-radius: 20px;
+    min-width: 500px;
+    padding: 20px;
+    background-color: white;
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.60);
+
+    top: 300px;
+    left: 400px;
+}
+
+#modal>h3 {
+    color: red;
+}
+
+/* On regle le l'alignement du btn fermer dans le modal */
+.modal-align-btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* On crée la regle sur le btn fermer du modal */
+#fermer {
+    background-color: #205685;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+/* On change la couleur sur le btn */
+#fermer:hover {
+    background-color: rgb(146, 62, 62)
+}
